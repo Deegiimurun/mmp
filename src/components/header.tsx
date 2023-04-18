@@ -6,7 +6,7 @@ import {
     DrawerOverlay,
     Image, Text,
     useDisclosure,
-    Link
+    Link, Input
 } from "@chakra-ui/react";
 
 export default function Footer() {
@@ -36,7 +36,26 @@ export default function Footer() {
                                     <Link href={'/merchandise'}><Text fontSize={['32px','68px']} textColor={'white'}>MERCHANDISE</Text></Link>
                                     <Link href={'/contact'}><Text fontSize={['32px','68px']} textColor={'white'}>CONTACT</Text></Link>
                                 </Box>
-                                <Box flexGrow={'1'} display={'flex'} flexDirection={'column'}>
+                                <Box flexGrow={'1'} display={'flex'} flexDirection={'column'} alignItems={'start'} justifyContent={'end'}>
+                                    <Box w={['90%', '70%']} display={'flex'} flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'} mb={'50px'}>
+                                        <Link href={'#'}><Image boxSize={['36px','80px']} src={'/images/social/facebook.png'}/></Link>
+                                        <Link href={'#'}><Image boxSize={['36px','80px']} src={'/images/social/instagram.png'}/></Link>
+                                        <Link href={'#'}><Image boxSize={['36px','80px']} src={'/images/social/youtube.png'}/></Link>
+                                        <Link href={'#'}><Image boxSize={['36px','80px']} src={'/images/social/sound-cloud.png'}/></Link>
+                                        <Link href={'#'}><Image boxSize={['36px','80px']} src={'/images/social/idk.png'}/></Link>
+                                        <Link href={'#'}><Image boxSize={['36px','80px']} src={'/images/social/twitter.png'}/></Link>
+                                    </Box>
+                                    <Box display='flex' flexDirection={'column'} justifyContent={'center'} gap={'10px'}>
+                                        <Text fontSize={['20px', '32px']} fontWeight={'bold'} textAlign={'center'} textColor={'white'}>Subscribe to our Newsletter</Text>
+                                        <Text mb={'50px'} fontSize={['14px', '16px']} textColor={'white'}>Get updates on releases, event and more...</Text>
+                                        <Box display='flex' justifyContent={'start'}>
+                                            <Input borderRadius={0} placeholder='Enter your email address' w={'60%'} />
+                                            <Button borderRadius={0} w={'40%'}>
+                                                <Text mr={'10px'}>Notify me</Text>
+                                                <Image src={'/up-right.png'}/>
+                                            </Button>
+                                        </Box>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>

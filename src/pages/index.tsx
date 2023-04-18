@@ -1,5 +1,5 @@
-import {Box, Image, Link, Text} from "@chakra-ui/react";
-import Head from "next/head";
+import {Box, Button, Image, Input, InputGroup, InputRightElement, Link, Text} from "@chakra-ui/react";
+import Head from "next/head";;
 
 export default function Home() {
     return (
@@ -49,6 +49,17 @@ export default function Home() {
                 <Link href={'/merchandise'}>
                     <Image h={['80%', '90%']} src={'button.png'}/>
                 </Link>
+            </Box>
+            <Box display='flex' flexDirection={'column'} justifyContent={'center'} gap={'10px'}>
+                <Text fontSize={['20px', '32px']} fontWeight={'bold'} textAlign={'center'} textColor={'white'}>Subscribe to our Newsletter</Text>
+                <Text mb={'50px'} fontSize={['14px', '16px']} textAlign={'center'} textColor={'white'}>Get updates on releases, event and more...</Text>
+                <Box display='flex' justifyContent={'center'}>
+                    <Input borderRadius={0} placeholder='Enter your email address' w={'20%'} />
+                    <Button borderRadius={0} w={'10%'}>
+                        <Text mr={'10px'}>Notify me</Text>
+                        <Image src={'/up-right.png'}/>
+                    </Button>
+                </Box>
             </Box>
         </>
     )
