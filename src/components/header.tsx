@@ -28,7 +28,7 @@ export default function Footer() {
                                     <Image src={'/up.png'}></Image>
                                 </Button>
                             </Box>
-                            <Box flexGrow={'1'} display={'flex'} flexDirection={['column','row']} p={[10,20]}>
+                            <Box flexGrow={['0.5', '1']} display={'flex'} flexDirection={['column','row']} p={[5,20]}>
                                 <Box flexGrow={'1'} display={'flex'} flexDirection={'column'} justifyContent={'space-between'} >
                                     <Link href={'/what-we-do'}><Text fontSize={['32px','68px']} textColor={'white'}>WHAT WE DO</Text></Link>
                                     <Link href={'/label'}><Text fontSize={['32px','68px']} textColor={'white'}>MMP LABEL</Text></Link>
@@ -37,7 +37,7 @@ export default function Footer() {
                                     <Link href={'/contact'}><Text fontSize={['32px','68px']} textColor={'white'}>CONTACT</Text></Link>
                                 </Box>
                                 <Box flexGrow={'1'} display={'flex'} flexDirection={'column'} alignItems={'start'} justifyContent={'end'}>
-                                    <Box w={['90%', '70%']} display={'flex'} flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'} mb={'50px'}>
+                                    <Box w={['100%', '70%']} display={'flex'} flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'} mb={'50px'}>
                                         <Link href={'#'}><Image boxSize={['36px','80px']} src={'/images/social/facebook.png'}/></Link>
                                         <Link href={'#'}><Image boxSize={['36px','80px']} src={'/images/social/instagram.png'}/></Link>
                                         <Link href={'#'}><Image boxSize={['36px','80px']} src={'/images/social/youtube.png'}/></Link>
@@ -48,10 +48,10 @@ export default function Footer() {
                                     <Box display='flex' flexDirection={'column'} justifyContent={'center'} gap={'10px'}>
                                         <Text fontSize={['20px', '32px']} fontWeight={'bold'} textAlign={'center'} textColor={'white'}>Subscribe to our Newsletter</Text>
                                         <Text mb={'50px'} fontSize={['14px', '16px']} textColor={'white'}>Get updates on releases, event and more...</Text>
-                                        <Box display='flex' justifyContent={'start'}>
-                                            <Input borderRadius={0} placeholder='Enter your email address' w={'60%'} />
+                                        <Box display='flex' justifyContent={'start'}  w={['90%', '40%']}  w={'100%'}>
+                                            <Input fontSize={['14px', '16px']} borderRadius={0} placeholder='Enter your email address' w={'60%'} />
                                             <Button borderRadius={0} w={'40%'}>
-                                                <Text mr={'10px'}>Notify me</Text>
+                                                <Text mr={'10px'} fontSize={['14px', '16px']}>Notify me</Text>
                                                 <Image src={'/up-right.png'}/>
                                             </Button>
                                         </Box>

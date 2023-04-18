@@ -50,13 +50,13 @@ export default function Home() {
                     <Image h={['80%', '90%']} src={'button.png'}/>
                 </Link>
             </Box>
-            <Box display='flex' flexDirection={'column'} justifyContent={'center'} gap={'10px'}>
+            <Box display='flex' flexDirection={'column'} justifyContent={'center'} alignItems={'center'} gap={'10px'} w={'full'}>
                 <Text fontSize={['20px', '32px']} fontWeight={'bold'} textAlign={'center'} textColor={'white'}>Subscribe to our Newsletter</Text>
                 <Text mb={'50px'} fontSize={['14px', '16px']} textAlign={'center'} textColor={'white'}>Get updates on releases, event and more...</Text>
-                <Box display='flex' justifyContent={'center'}>
-                    <Input borderRadius={0} placeholder='Enter your email address' w={'20%'} />
-                    <Button borderRadius={0} w={'10%'}>
-                        <Text mr={'10px'}>Notify me</Text>
+                <Box display='flex' justifyContent={'center'} w={['90%', '30%']}>
+                    <Input fontSize={['14px', '16px']} borderRadius={0} placeholder='Enter your email address' w={'70%'} />
+                    <Button borderRadius={0} w={'30%'}>
+                        <Text mr={['0px','10px']} fontSize={['14px', '16px']}>Notify me</Text>
                         <Image src={'/up-right.png'}/>
                     </Button>
                 </Box>
